@@ -1,0 +1,22 @@
+version: '3'
+services:
+  movies:
+    image: rudrapalakiran55/project3-movies
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+
+  train:
+    image: rudrapalakiran55/project3-train
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  dth:
+    image: rudrapalakiran55/project3-dth
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
