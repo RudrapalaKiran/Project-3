@@ -1,21 +1,21 @@
 version: '3'
 services:
   movies:
-    image: rudrapalakiran55/project3-movies
+    image: rudrapalakiran55/phonepemovies
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
   train:
-    image: rudrapalakiran55/project3-train
+    image: rudrapalakiran55/phonepetrain
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   dth:
-    image: rudrapalakiran55/project3-dth
+    image: rudrapalakiran55/phonepedth
     ports:
       - "82:80"
     deploy:
